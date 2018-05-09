@@ -267,3 +267,4 @@ __pycache__/
 #Settings
 Core.Test/appsettings.json
 Core/appsettings.json
+Core/Logs/
