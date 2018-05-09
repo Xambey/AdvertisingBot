@@ -38,9 +38,10 @@ namespace Core
             var client = IrcClientSingelton.Instance;
             await client.Authorize();
             await client.JoinRoom("dudelka_krasnaya");
-            await client.Privmsg("dudelka_krasnaya", "test", "Dudelka_Krasnaya");
+            await client.Privmsg("dudelka_krasnaya", "I'm not PlotoiadnuiKeksik Kappa I'm a bot of Dudelka ", "Dudelka_Krasnaya");
+            await Task.Delay(2000);
+            await client.Privmsg("dudelka_krasnaya", "Test broadcast message");
 
-            await client.Reconnect();
             while (true)
             {
                 var message = await client.ReadMessage();

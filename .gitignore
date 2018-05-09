@@ -1,1 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
+Core.Test/bin/
+Core.Test/obj/
+Core/Logs/
+Core/bin/
+
+#Settings
+Core.Test/appsettings.json
+Core/appsettings.json

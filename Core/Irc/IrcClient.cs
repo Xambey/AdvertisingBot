@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using Core.Options;
 using Serilog;
 
 namespace Core.Irc
@@ -16,6 +17,12 @@ namespace Core.Irc
         private IrcClientSingelton()
         {
         }
+
+        public static void Generate(AuthOptions authOptions)
+        {
+            Generate(authOptions.Login, authOptions.OAuth, authOptions.IrcHost, authOptions.Port);
+        }
+        
         /// <summary>
         /// Generate Irc Client for communication with Twitch
         /// </summary>
