@@ -3,7 +3,11 @@ Core.Test/bin/
 Core.Test/obj/
 Core/Logs/
 Core/bin/
+Core/obj
 
 #Settings
 Core.Test/appsettings.json
 Core/appsettings.json
+
+.idea/.idea.PlotoiadnuiBot/.idea/workspace.xml
+
